@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(117, 167, 173);
+}
+
+header {
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 4px 8px #00000077;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f4f8;
+    position: fixed;
+}
+
+header nav a {
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.1s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+
+
+
+}
+
+header nav a:hover,
+:focus {
+    transition: 0.1s ease;
+    background-color: #00000057;
+    color: #fff;
+}
+
+.active {
+    background-color: #00000057;
+    color: white;
+}

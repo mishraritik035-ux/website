@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main {
+            width: 100%;
+            height: 100vh;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .subject {
+            width: 90%;
+            height: 350px;
+            box-shadow: 0px 2px 4px #00000048;
+            border-radius: 10px;
+            background-color: #92acaf;
+            margin: 10px;
+        }
+
+        .sub-card {
+            width: 90%;
+            height: 70px;
+            box-shadow: 0px 2px 4px #00000048;
+            border-radius: 10px;
+            margin: 20px;
+            display: flex;
+            padding: 10px;
+            transition: 0.2s ease;
+            background-color: rgb(43, 187, 187);
+            cursor: pointer;
+
+        }
+
+        .sub-card:hover {
+            transform: translateY(-3px);
+            transition: 0.2s ease;
+        }
+
+        .transparent-image {
+            opacity: 0.0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="30Sep24 Simon  Free Upload   (1).png " alt="" height="40px"
+                style="margin: 10px; border-radius: 20px;">
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <a href="index.html0" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+    <div class="header" style="height: 120px;"></div>
+
+    <div class="main">
+        <div class="subject">
+            <div class="sub-card" id="bca">
+                <div class="img1">
+
+                    <img src="bbca.img" height="60px" width="60px" style="border-radius: 200px;  ">
+                </div>
+                <div class="about-course">
+                    <h5 style="margin-left: 20px;  ">BCA</h5>
+
+                    <p style="font-size: 8px; margin-left: 20px; margin-top: 3px
+                    ;  ">BCA stands for <b> Bachelor of Computer Applications.</b> It's a three-year undergraduate
+                        degree
+                        program focused on computer science and its applications, particularly in software development,
+                        database management, and networking. <br>In essence, a BCA degree provides a solid foundation
+                        for a career in the rapidly growing field of computer applications.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sub-card" id="mca">
+                <div class="img2">
+                    <img src="mca.img" class="transparent-image" alt="" height="60px" width="60px"
+                        style="border-radius: 200px;">
+                </div>
+                <div class="about-course">
+                    <h5 style="margin-left: 20px;">MCA</h5>
+                    <p style="font-size: 8px;margin-left: 20px; margin-top: 3px;">MCA stands for <b> Master of Computer
+                            Applications.</b>It is a postgraduate degree focused on computer science and information
+                        technology. The program provides students with advanced knowledge and practical skills in areas
+                        like programming, software development, database management, and web technologies. It is
+                        designed to prepare individuals for careers in the IT sector, particularly in software
+                        development and related fields.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sub-card" id="olevel">
+                <div class="img3">
+                    <img src="o level.img" alt="" height="60px" width="60px" style="border-radius: 200px;">
+                </div>
+                <div class="about-course">
+                    <h5 style="margin-left: 20px;">O'level</h5>
+                    <p style="font-size: 8px; margin-left: 20px; margin-top: 3px;">The O level computer course, also
+                        known as the <b> NIELIT O Level,</b> is a foundation-level certification in Information
+                        Technology (IT) offered by the National Institute of Electronics & Information Technology
+                        (NIELIT), under the Government of India. It's designed to equip individuals with basic IT skills
+                        and knowledge for various roles in the IT industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="subject">
+            <div class="sub-card" id="ccc">
+                <div class="img3">
+                    <img src="ccc.img" alt="" height="60px" width="60px" style="border-radius: 200px;">
+                </div>
+                <div class="about-course">
+                    <h5 style="margin-left: 20px;">CCC</h5>
+                    <p style="font-size: 8px; margin-left: 20px; margin-top: 3px; ">The O level computer course, also
+                        known as the <b> NIELIT O Level,</b> is a foundation-level certification in Information
+                        Technology (IT) offered by the National Institute of Electronics & Information Technology
+                        (NIELIT), under the Government of India. It's designed to equip individuals with basic IT skills
+                        and knowledge for various roles in the IT industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let bca = document.getElementById('bca');
+        let mca = document.getElementById('mca');
+        let olevel = document.getElementById('olevel');
+        let ccc = document.getElementById('ccc');
+
+        bca.addEventListener('click', () => {
+            window.open("bca classes.html")
+        });
+
+        mca.addEventListener('click', () => {
+            window.open("mca.html");
+        });
+
+        olevel.addEventListener('click', () => {
+            window.open("bca classes.html")
+        });
+
+        ccc.addEventListener('click', () => {
+            window.open("bca classes.html")
+        });
+
+
+    </script>
+
+</body>
+
+</html>

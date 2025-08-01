@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Collage | Contact</title>
+    <style>
+        .main {
+            width: 100%;
+            height: 90%;
+        }
+
+        .contact-banner {
+            width: 100%;
+            height: 100px;
+            background: #2e2c2c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .contact-banner h2 {
+            color: #fff;
+            margin: 5PX 0;
+        }
+
+        .contact-banner p {
+            color: #b9acac;
+        }
+
+        .contact-container {
+            width: 100%;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-box {
+            height: 280px;
+            width: 200px;
+            margin: 20px;
+            margin-top: 40px;
+            box-shadow: 1px 2px 6px #777;
+            border-radius: 8px;
+            transition: 0.1s ease;
+            background-color: rgb(60, 59, 63);
+
+        }
+
+        .contact-box:hover {
+            transform: translateY(-5px);
+            transform: scale(1.02);
+            transition: 0.0001s ease;
+
+        }
+
+        .contact-box .contact-form {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .contact-box .contact-form label {
+            font-size: 10px;
+            margin: 8px;
+
+        }
+
+        .contact-box .contact-form input {
+            outline: none;
+            border: none;
+            width: 180px;
+            margin: 10px 5px;
+            border: 1px solid #999;
+            color: #333;
+            border-radius: 1px;
+            padding: 5px 3px;
+            font-size: 8px;
+            background-color: whitesmoke;
+        }
+
+        .contact-box .contact-form input:hover,
+        :focus {
+            box-shadow: 1px 1px 3px #4a90e2, 2px 2px 5px #4a90e2;
+        }
+
+
+        .sub {
+            border-radius: 5px;
+            color: #fff;
+            background: #4a90e2;
+            padding: 8px 12px;
+            font-size: 10px;
+            width: 80px;
+            outline: none;
+            border: none;
+            margin: 20px 55px;
+            font-size: 12px;
+        }
+
+        .sub:hover {
+            transform: translateY(-1px);
+            transform: scale(1.02);
+            transition: 0.0001s ease;
+        }
+
+        .img {
+            padding: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="30Sep24 Simon  Free Upload   (1).png" alt="" height="40px" style="margin: 10px;">
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+    <div class="header" style="height: 50px;"></div>
+    <div class="main">
+
+        <div class="contact-banner">
+            <h2>Contact</h2>
+            <p style="font-size: 12px;">hey! this is my contact page</p>
+        </div>
+        <div class="contact-container">
+
+            <div class="contact-box con-img">
+
+                <div class="inner-box">
+
+
+                    <div class="contact-text"></div>
+
+                    <div class="contact-text"></div>
+
+                    <div class="contact-text"></div>
+
+
+                    <div class="icon">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <h3 style="text-align: center; font-size: 18px; margin: 5px;">Contact Form</h3>
+                <hr>
+                <div class="contact-form">
+
+                    <input type="text" placeholder="Name" required>
+
+
+                    <input type="email" placeholder="E-mail" required>
+
+
+                    <textarea name="massage" id="" style="width: 180px; margin: 5px; font-size: 8px; padding: 3px;"
+                        placeholder="Massage......." ; rows="10"></textarea>
+
+                    <button class="sub" id="submit" type="submit">Submit</button>
+                </div>
+                <div class="contact-box con-img">
+                    <img src="what's app  (1).png" height="50%" class="img" alt="" style="display: flex;">
+                    <div class="inner-box">
+                        <h4 style="margin-left: 15px;color: antiquewhite;   ">contact us on what'sapp</h4>
+
+                        <div class="contact-text"></div>
+
+                        <div class="contact-text"></div>
+
+                        <div class="contact-text"></div>
+
+
+                        <div class="icon">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-box con-img">
+                    <img src="instagram.png" height="50%" class="img" alt="" style="display: flex;">
+                    <div class="inner-box">
+
+                        <h4 style="margin-left: 15px; color: antiquewhite;">Follow us on instagram</h4>
+                        <div class="contact-text"></div>
+
+                        <div class="contact-text"></div>
+
+                        <div class="contact-text"></div>
+
+
+                        <div class="icon">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let button = document.getElementById('submit');
+        button.addEventListener('click', () => {
+            alert("submitted");
+        })
+    </script>
+</body>
+
+</html>

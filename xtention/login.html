@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("pexels-pixabay-531880.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .login-container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background: #0056b3;
+        }
+        .image1{
+            background-image: url(pexels-pixabay-531880.jpg);
+        }
+    </style>
+</head>
+
+<body id="image1">
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="Enter your name" name="username" required><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+
+            <input type="submit" value="Login"><br>
+            <p style="margin-left: 80px;">
+                <a href="forget.html" style="font-size: 12px; padding: 0%; margin-right: 50px;">Forget Password</a> 
+                
+            <a href="register.html" style="margin-left: 60px; ;"><b> Register </b></a>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
